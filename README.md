@@ -19,6 +19,8 @@ All svg files follow this guidline:
 
 ## INSTALLATION
 
+### No CDN usage available at the moment
+
 ### Download
 
 1. Download the latest release .zip-file.
@@ -28,6 +30,7 @@ All svg files follow this guidline:
 
 
 ### Git Submodule (Recommended)
+
 You can add the repository as a git submodule as well:
 
 #### Init
@@ -57,8 +60,25 @@ $ git submodule update --init --recursive
 
 ```
 
+Add to your CSS like 
+
+```CSS
+div[brand*=BRAND-NAME] {
+ background-image: url("//assets/brand-names/BRAND-NAME.svg");
+}
+
+```
+
 ## Notes:
 This repository is just for decoration purposes. brand names may have a different license.
+
+### Update of Brands
+
+Should a brand wish for their icon or data to be updated, please submit an issue to the Simple Icons GitHub repository. In the issue, please explain your affiliation with the company and reasons for the update. We generally release updates once a week, but can make exceptions for immediate updates of brands.
+
+### Removal of Brands
+
+Should a brand wish for their icon to be removed from the package, contact removals at simpleicons dot org explaining your affiliation with the company, and reasons for removal. Alternatively, it is also possible to submit an issue on the Simple Icons GitHub repository with the same information. We generally remove icons that no longer meet our criteria twice a year in our major releases - but can occasionally make exceptions for immediate removal of brands.
 
 
 ## Disclaimer
