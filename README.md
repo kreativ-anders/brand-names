@@ -47,11 +47,15 @@ Run these commands to update the repository (and all other submodules):
 
 > main not "master"!
 
+```Shell
+
 $ cd YOUR/PROJECT/ROOT
 $ git submodule foreach git checkout main
 $ git submodule foreach git pull
 $ git commit -am "Update submodules"
 $ git submodule update --init --recursive
+
+```
 
 ## Notes:
 This repository is just for decoration purposes. brand names may have a different license.
