@@ -1,37 +1,37 @@
-# brand-names
+# Brand Names - When icons are not enough
 
 * [What do you get?](#what-do-you-get)
+* [Format guildine](#svg-format-guidline)
 * [Installation](#installation)
 * [Notes](#notes)
 * [Support](#support)  
 
 ## What do you get?
-Sometimes brand icons are not enough. So brand names sometimes feel better.
 
-## FORMAT GUIDLINE
-All svg files follow this guidline:
+Sometimes brand icons are not enough. So brand names are the way to go.
 
-1. Resize Page to brand/selection
-2. Transform size to 250px width
-3. Scale Page with the factor 1.2
-4. Align brand/selection to center
-5. Compress svg file
+## SVG format guidline
 
-## INSTALLATION
+All `.svg` files follow this guidline (based on [Inkscape](https://inkscape.org/)):
 
-### No CDN usage available at the moment
+1. Resize Page to brand/selection.
+2. Transform size to 250px width.
+3. Scale Page with the factor 1.2.
+4. Align brand/selection to center.
+5. Compress svg file (with any tool you prefer, e.g. [SVGOM](https://jakearchibald.github.io/svgomg/))
+
+## Installation
+
+> No CDN usage available at the moment!
 
 ### Download
 
 1. Download the latest release .zip-file.
 2. Unzip the files.
 3. Paste wherever you need the folder to be.
-4. Migrate in your project/app
-
+4. Migrate in your project/app.
 
 ### Git Submodule (Recommended)
-
-You can add the repository as a git submodule as well:
 
 #### Init
 
@@ -60,7 +60,9 @@ $ git submodule update --init --recursive
 
 ```
 
-Add to your CSS like 
+## Usage
+
+Add to your CSS like ...
 
 ```CSS
 div[brand*=BRAND-NAME] {
@@ -69,17 +71,13 @@ div[brand*=BRAND-NAME] {
 
 ```
 
-## Notes:
-This repository is just for decoration purposes. brand names may have a different license.
+## Notes
 
-### Update of Brands
+This repository is just for decoration purposes. brand names may have a different licenses. Use with caution.
 
-Should a brand wish for their icon or data to be updated, please submit an issue to the Simple Icons GitHub repository. In the issue, please explain your affiliation with the company and reasons for the update. We generally release updates once a week, but can make exceptions for immediate updates of brands.
+### Update/Removal of Brands
 
-### Removal of Brands
-
-Should a brand wish for their icon to be removed from the package, contact removals at simpleicons dot org explaining your affiliation with the company, and reasons for removal. Alternatively, it is also possible to submit an issue on the Simple Icons GitHub repository with the same information. We generally remove icons that no longer meet our criteria twice a year in our major releases - but can occasionally make exceptions for immediate removal of brands.
-
+Contact brand-names at kreativ-anders dot de explaining your affiliation with the company and reasons.
 
 ## Disclaimer
 
@@ -87,4 +85,4 @@ The source code is provided "as is" with no guarantee. Use it at your own risk a
 
 ## Support
 
-In case this Plug-In saved you some time and energy consider supporting kreativ-anders by donating via [PayPal](https://paypal.me/kreativanders), or becoming a **GitHub Sponsor**.
+In case this repository saved you some time and energy consider supporting kreativ-anders by donating via [PayPal](https://paypal.me/kreativanders), or becoming a **GitHub Sponsor**.
