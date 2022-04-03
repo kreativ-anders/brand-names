@@ -48,7 +48,7 @@ $ git commit -am "Add .svg brand names collection"
 
 Run these commands to update the repository (and all other submodules):
 
-> main not "master"!
+> **main** not "master"!
 
 ```Shell
 
