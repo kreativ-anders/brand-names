@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="250" height="75" viewBox="0 0 300 90">
-  <text x="150" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#E3000F" text-anchor="middle">Ernsting's</text>
-  <text x="150" y="75" font-family="Arial, sans-serif" font-size="28" font-weight="normal" fill="#E3000F" text-anchor="middle">family</text>
+  <g transform="translate(40, 15)">
+    <!-- Ernsting's family logo with house symbol -->
+    <g>
+      <!-- House icon -->
+      <path d="M 15 30 L 30 15 L 45 30 L 45 50 L 15 50 Z" fill="#E3000F"/>
+      <rect x="24" y="35" width="12" height="15" fill="#FFFFFF"/>
+      <path d="M 30 15 L 45 30 L 42 30 L 30 18 L 18 30 L 15 30 Z" fill="#8B0000"/>
+    </g>
+    
+    <!-- Text -->
+    <g transform="translate(55, 10)">
+      <text x="0" y="15" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#E3000F" font-style="italic">Ernsting's</text>
+      <text x="0" y="33" font-family="Georgia, serif" font-size="16" font-weight="normal" fill="#E3000F" font-style="italic">family</text>
+    </g>
+  </g>
 </svg>

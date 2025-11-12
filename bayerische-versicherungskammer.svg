@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="250" height="75" viewBox="0 0 300 90">
-  <text x="150" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#003D7A" text-anchor="middle">Bayerische</text>
-  <text x="150" y="75" font-family="Arial, sans-serif" font-size="24" font-weight="normal" fill="#003D7A" text-anchor="middle">Versicherungskammer</text>
+  <g transform="translate(20, 15)">
+    <!-- Bavarian diamond pattern -->
+    <g>
+      <path d="M 0 30 L 15 15 L 30 30 L 15 45 Z" fill="#FFFFFF" stroke="#003D7A" stroke-width="1.5"/>
+      <path d="M 15 15 L 30 30 L 15 45 L 0 30 Z" fill="#00A8E1"/>
+      <path d="M 8 30 L 15 23 L 22 30 L 15 37 Z" fill="#003D7A"/>
+    </g>
+    
+    <!-- Company name -->
+    <g transform="translate(40, 15)">
+      <text x="0" y="12" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#003D7A">Bayerische</text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="13" font-weight="normal" fill="#003D7A">Versicherungskammer</text>
+    </g>
+  </g>
 </svg>

@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="250" height="75" viewBox="0 0 300 90">
-  <text x="150" y="60" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#E62E04" text-anchor="middle">AliExpress</text>
+  <g transform="translate(30, 20)">
+    <!-- AliExpress logo design -->
+    <g>
+      <!-- Stylized "A" symbol -->
+      <path d="M 15 10 L 30 45 L 22 45 L 19 36 L 7 36 L 4 45 L -4 45 L 11 10 Z M 9 29 L 17 29 L 13 18 Z" fill="#E62E04"/>
+      
+      <!-- "liExpress" text -->
+      <g transform="translate(35, 25)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#000000">li</text>
+        <text x="22" y="0" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#E62E04">Express</text>
+      </g>
+      
+      <!-- Orange swoosh underneath -->
+      <path d="M 35 32 Q 80 28 120 32" stroke="#E62E04" stroke-width="2" fill="none"/>
+    </g>
+  </g>
 </svg>
