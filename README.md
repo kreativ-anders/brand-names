@@ -1,6 +1,7 @@
 # Brand Names - When icons are not enough
 
-**✨ A stunning, manually crafted collection of 139 brand logos ✨**
+**✨ A stunning, manually crafted collection of 192 brand logos ✨**
+
 
 * [What do you get?](#what-do-you-get)
 * [Why Brand Names?](#why-brand-names)
