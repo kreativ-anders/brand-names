@@ -1,0 +1,65 @@
+name: Update README with Brand Count
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.svg'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Count SVG files and update README
+        run: |
+          # Count SVG files in the root directory
+          SVG_COUNT=$(ls -1 *.svg 2>/dev/null | wc -l)
+          echo "Found $SVG_COUNT brand logos"
+          
+          # Create temporary file with updated README
+          awk -v count="$SVG_COUNT" '
+          BEGIN { found = 0 }
+          /^# Brand Names - When icons are not enough/ {
+            print $0
+            print ""
+            print "**✨ A stunning, manually crafted collection of " count " brand logos ✨**"
+            found = 1
+            next
+          }
+          /^\*\*✨ A stunning, manually crafted collection of/ {
+            # Skip old count line
+            next
+          }
+          { print }
+          ' README.md > README.tmp
+          
+          # Replace README if changes were made
+          if ! cmp -s README.md README.tmp; then
+            mv README.tmp README.md
+            echo "README updated with count: $SVG_COUNT"
+            echo "UPDATED=true" >> $GITHUB_ENV
+          else
+            rm README.tmp
+            echo "No changes needed"
+            echo "UPDATED=false" >> $GITHUB_ENV
+          fi
+          
+      - name: Commit and push if changed
+        if: env.UPDATED == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "chore: update brand count in README [skip ci]"
+          git push
